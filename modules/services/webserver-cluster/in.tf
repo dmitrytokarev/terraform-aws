@@ -4,7 +4,7 @@ variable "aws_region" {
 
 variable "server_port" {
   description = "The port the server will use for HTTP requests"
-  default = 8080
+  default     = 8080
 }
 
 variable "ec2_instance_type" {
@@ -13,6 +13,7 @@ variable "ec2_instance_type" {
 
 variable "ec2_image_id" {
   default = "ami-c62eaabe"
+
   //  From: http://cloud-images.ubuntu.com/locator/ec2/
   //  ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-20180205 - ami-c62eaabe
   //  Canonical, Ubuntu, 16.04 LTS, amd64 xenial
